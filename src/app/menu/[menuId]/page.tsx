@@ -1,5 +1,6 @@
 "use client"
 import { redirect } from "../../../../node_modules/next/navigation";
+import { notFound } from "../../../../node_modules/next/navigation";
 
 export default function MenuDetails({params}: {params: {menuId: string};})  {
     // const menu = fetch(menu -> menuId 1)
@@ -8,6 +9,9 @@ export default function MenuDetails({params}: {params: {menuId: string};})  {
     // }
     const test = 1;
     console.log(params)
+    if(parseInt(params.menuId) > 100 ) {
+        notFound()
+    }
     return (
        <>
            <h1>Menu {params.menuId}</h1> 
