@@ -1,4 +1,4 @@
-export default function Profile() {
+export default function Product() {
     return (
        <>
            <h1>Product List</h1> 

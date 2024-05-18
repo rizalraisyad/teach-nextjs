@@ -14,9 +14,3 @@ export default function Docs({
 
     return <h1>Docs home</h1>;      
 };
-
-//  [[...slug]]
-//  [variable]
-function pertambahan(a: number,b: number) {
-    return a+b
-}
